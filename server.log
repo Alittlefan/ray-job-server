@@ -1,0 +1,22 @@
+03-05-25 06:56:15 INFO server init: "Initializing Job Server with config: 
+ServerConfig(ray_address='auto', dashboard_address='auto', tensorboard_address='http://192.168.16.36:6006/', ray_storage='/mnt/ray/ray_results', ray_log_storage='/mnt/ray/ray_logs', job_working_dir='', log_dir='logs/', excludes=['__pycache__/*', 'data/*', 'docker/*', 'logs/*', 'scripts/*'])"
+2025-05-03 06:56:15,318	INFO worker.py:1489 -- Connecting to existing Ray cluster at address: 172.19.0.4:6379...
+2025-05-03 06:56:15,325	INFO worker.py:1664 -- Connected to Ray cluster. View the dashboard at [1m[32mhttp://172.19.0.4:8265 [39m[22m
+2025-05-03 06:56:15,917	INFO packaging.py:530 -- Creating a file package for local directory ''.
+2025-05-03 06:56:15,927	WARNING packaging.py:405 -- File /workspace/customization/envs/defense_sim/envs/maps/los_table.json is very large (19.86MiB). Consider adding this file to the 'excludes' list to skip uploading it: `ray.init(..., runtime_env={'excludes': ['/workspace/customization/envs/defense_sim/envs/maps/los_table.json']})`
+2025-05-03 06:56:15,975	INFO packaging.py:358 -- Pushing file package 'gcs://_ray_pkg_c7c9934baa1a3eee.zip' (22.09MiB) to Ray cluster...
+2025-05-03 06:56:16,047	INFO packaging.py:371 -- Successfully pushed file package 'gcs://_ray_pkg_c7c9934baa1a3eee.zip'.
+INFO:     Started server process [277]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     10.0.0.2:45164 - "GET /task/list HTTP/1.1" 200 OK
+INFO:     10.0.0.2:45168 - "GET /task/list HTTP/1.1" 200 OK
+06-05-25 00:10:28 ERROR server get_job_status: "Request failed with status code 404: Job 67ff492bae69f4000a5624e8 does not exist."
+INFO:     10.0.0.2:45176 - "GET /task/status/67ff492bae69f4000a5624e8 HTTP/1.1" 200 OK
+06-05-25 00:10:28 ERROR server get_job_status: "Request failed with status code 404: Job 67ff492bae69f4000a5624e8 does not exist."
+INFO:     10.0.0.2:45186 - "GET /task/status/67ff492bae69f4000a5624e8 HTTP/1.1" 200 OK
+06-05-25 00:10:28 ERROR server delete_job: "Request failed with status code 404: Job 67ff492bae69f4000a5624e8 does not exist."
+INFO:     10.0.0.2:45194 - "GET /task/delete/67ff492bae69f4000a5624e8 HTTP/1.1" 200 OK
+06-05-25 00:10:28 ERROR server delete_job: "Request failed with status code 404: Job 67ff492bae69f4000a5624e8 does not exist."
+INFO:     10.0.0.2:45196 - "GET /task/delete/67ff492bae69f4000a5624e8 HTTP/1.1" 200 OK

@@ -1,0 +1,23 @@
+{
+    "enemies": [
+        {
+            "type": "infantry",
+            "speed": [1.5, 4.5],
+            "health": 100,
+            "attack_range": 5.0,
+            "attack_damage": 10,
+            "attack_cooldown": 2.0,
+            "default_orientation": [0.0, 0.0, 0.0]
+        },
+        {
+            "type": "armored_vehicle",
+            "speed": [1.5],
+            "health": 100,
+            "attack_range": 10.0,
+            "attack_damage": 50,
+            "attack_cooldown": 5.0,
+            "splash_radius": 3.0,
+            "default_orientation": [0.0, 0.0, 90.0]
+        }
+    ]
+}

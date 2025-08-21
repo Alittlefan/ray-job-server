@@ -1,0 +1,41 @@
+{
+    "turrets": [
+        {
+            "type": "bigua",
+            "health": 100,
+            "max_angles": [40,-80,-135,135],
+            "default_orientation": [0, 0, 0],
+            "weapons": [
+                {
+                    "weapon_type": "machine_gun",
+                    "attack_frequency": 5,
+                    "attack_range": 25,
+                    "damage": 15,
+                    "ammo": 300
+                },
+                {
+                    "weapon_type": "rocket",
+                    "attack_frequency": 1,
+                    "attack_range": 60,
+                    "damage": 100,
+                    "ammo": 75
+                }
+            ]
+        },
+        {
+            "type": "bazhua",
+            "health": 100,
+            "max_angles": [45,-45,-180,180],
+            "default_orientation": [0, 0, 0],
+            "weapons": [
+                {
+                    "weapon_type": "machine_gun",
+                    "attack_frequency": 5,
+                    "attack_range": 25,
+                    "damage": 15,
+                    "ammo": 300
+                }
+            ]
+        }
+    ]
+}
